@@ -3,6 +3,7 @@
 import {onBeforeMount, ref} from "vue";
 import {useSidebar} from "vitepress/theme";
 import {useRouter} from "vitepress";
+import type {DefaultTheme} from "vitepress/theme";
 
 const {
   isOpen: isSidebarOpen,
@@ -16,13 +17,14 @@ const {
   go
 } = useRouter();
 
-const open = ref([]);
+const open = ref([] as string[]);
 
 onBeforeMount(() => {
   const sideBarList = sidebarGroups.value;
 
-  sideBarList.forEach((item) => {
+  sideBarList.forEach((item: DefaultTheme.SidebarItem) => {
     if (!item.collapsed) {
+
       open.value.push(`${item.text}`)
     }
   })
@@ -34,7 +36,7 @@ onBeforeMount(() => {
   <v-navigation-drawer absolute
                        permanent
                        v-model="hasSidebar">
-    <v-list nav density="compact"
+    <v-list density="compact"
             v-for="(mainItem, mainIndex) in sidebarGroups"
             :key="mainIndex"
             v-model:opened="open">

@@ -4,7 +4,8 @@
     "target": "esnext",
     "moduleResolution": "Bundler",
     "allowSyntheticDefaultImports": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "skipLibCheck": true
   },
   "exclude": [
     "**/node_modules/**",
@@ -13,5 +14,8 @@
     "bin",
     "docs/snippets",
     "scripts"
+  ],
+  "types": [
+    "node"
   ]
 }
