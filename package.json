@@ -1,5 +1,6 @@
 {
   "name": "custom-vitepress-vuetify-theme",
+  "version": "0.0.1",
   "type": "module",
   "files": [
     "dist"
@@ -39,5 +40,9 @@
     "./dist/*": "./dist/*",
     "./package.json": "./package.json",
     "./config": "./dist/config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadlafontaine/custom-vitepress-vuetify-theme.git"
   }
 }
