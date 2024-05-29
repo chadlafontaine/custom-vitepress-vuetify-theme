@@ -11,7 +11,7 @@ npm i custom-vitepress-vuetify-theme
 
 ## Usage
 
-Create index.js in .vitepress/theme/index.js
+Create .vitepress/theme/index.js
 
 ```js
 // .vitepress/theme/index.js
