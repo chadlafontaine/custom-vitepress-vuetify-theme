@@ -4,6 +4,12 @@ Custom Vitepress theme that uses Vuetify components
 
 ## Installation
 
+First install Vitepress
+
+See https://vitepress.dev/guide/getting-started
+
+Then add the custom theme
+
 ```bash
 # with npm
 npm i custom-vitepress-vuetify-theme
